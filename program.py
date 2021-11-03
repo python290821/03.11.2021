@@ -34,3 +34,14 @@ print(thisdict.pop('model'))
 #del thisdict['model'] # will create an error
 del thisdict['year']
 print(thisdict)
+
+
+# def doesKeyExist(d, k)
+#   d dictionary k key
+#   if key exist in dict return True else False
+# def tryAdd(d, k, v)
+#   if key exist in dict return True else False
+#   if key exists return False
+#     else add to dictionary (k,) and return True
+# print dictionary (d)
+#  * etgar: use for loop on d.items()
