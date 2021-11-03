@@ -3,9 +3,40 @@
 thisdict = {
   "brand": "Ford",
   "model": "Mustang",
-  "year": 1964
+  "year": 1964,
+  "age": 1964
 }
+for k in thisdict:
+  print(f'[{k}]: [{thisdict[k]}]')
+
+for k in thisdict.keys():
+  print(f'key={k}: value={thisdict[k]}')
+
+for k in thisdict.keys():
+  v = thisdict[k]
+  print(f'key={k}: value={v}')
+
+for k,v in thisdict.items():
+  print(f'key={k}: value={v}')
+
+for v in thisdict.values():
+  if v == 1964:
+    # stuck
+    pass
+
+for k in thisdict.keys():
+  v = thisdict[k]
+  if v == 1964:
+    print(f'key={k}: value={v}')
+
+for k,v in thisdict.items():
+  if v == 1964:
+    print(f'key={k}: value={v}')
+
+print([k for k,v in thisdict.items() if v == 1964])
+
 print(thisdict)
+
 thisdict = {} # new dictionary
 thisdict = dict() # new dictionary
 thisdict['brand'] = 'Ford'
@@ -63,16 +94,38 @@ print(_d1)
 #   d dictionary k key
 #   if key exist in dict delete it and return it
 #       if not return None
+def tryDelete(d, k):
+  if doesKeyExist(d, k):
+    return d.pop(k)
+  return None
+_d1 = {'name': 'danny', 'age': 20}
+tryDelete(_d1, 'age')
+print(_d1)
+
 # create a dictionary of cities in the world and their population:
 #   Tel-aviv, london, paris, tokyo
-#    { tel-Aviv: 451,520 ,  ... }
+#    { tel-Aviv: 451520 ,  ... }
 #   input a city name from user
 #     print the city number of citizens
 #     if city does not exist print 'city does not exist in the dict'
 #   input a number from the user
 #     if there is acity with number of citizens in the dict print the city name
+_citizens = { 'tel-Aviv': 100 , 'paris': 100, 'tokyo': 100,
+              'london': 8_173_941}
+
+city = input('please enter city name: ')
+if doesKeyExist(_citizens, city):
+  print(f'in {city} there are {_citizens[city]:,} citizens')
+else:
+  print(f'city {city} does not exist in dictionary')
+
+# _citizens.setdefault()
+population = int(input('please enter num of citizens: '))
+print(', '.join([k for k,v in _citizens.items() if v == population]))
+
 # def getSize(d)
 #     return the size of the dictionary (number of items)
+
 # def isDictKeysAlpha(d)
 #     returns true if all the keys are alpha (hint: use isaplhpa)
 # def popByValue(d, v)
