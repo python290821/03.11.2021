@@ -39,9 +39,26 @@ print(thisdict)
 # def doesKeyExist(d, k)
 #   d dictionary k key
 #   if key exist in dict return True else False
+def doesKeyExist(d, k):
+  return k in d.keys()
+_d1 = { 'name': 'danny', 'age': 20}
+print(doesKeyExist( _d1, 'address'))
+
 # def tryAdd(d, k, v)
 #   if key exist in dict return False
 #   elif key does NOT exists return true and add to dictionary (k:v)
+def tryAddIfNotExist(d, k, v):
+  if doesKeyExist(d, k):
+    return False
+  d[k] = v
+  return True
+_d1 = { 'name': 'danny', 'age': 20}
+print('tryAddIfNotExist with age',tryAddIfNotExist( _d1, 'age', 22))
+print(_d1)
+print('tryAddIfNotExist with address',\
+      tryAddIfNotExist( _d1, 'address', 'Tel Aviv'))
+print(_d1)
+
 # def tryDelete(d, k)
 #   d dictionary k key
 #   if key exist in dict delete it and return it
