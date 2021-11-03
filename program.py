@@ -61,5 +61,7 @@ print(thisdict)
 # def popByValue(d, v)
 #     pop all items with the v specific value
 #     return a list of all of the removed items
+# def compareDict(d1, d2)
+#     return True if all keys+values are similar between dictionaries
 # def printDictionary (d)
 #  * etgar: use for loop on d.items()
