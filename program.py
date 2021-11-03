@@ -110,7 +110,7 @@ print(_d1)
 #     if city does not exist print 'city does not exist in the dict'
 #   input a number from the user
 #     if there is acity with number of citizens in the dict print the city name
-_citizens = { 'tel-Aviv': 100 , 'paris': 100, 'tokyo': 100,
+_citizens = { 'tel-Aviv': 451520 , 'paris': 2_140_526, 'tokyo': 14_043_239,
               'london': 8_173_941}
 
 city = input('please enter city name: ')
