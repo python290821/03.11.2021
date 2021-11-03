@@ -43,5 +43,9 @@ print(thisdict)
 #   if key exist in dict return True else False
 #   if key exists return False
 #     else add to dictionary (k,) and return True
+# def tryDelete(d, k)
+#   d dictionary k key
+#   if key exist in dict delete it and return it
+#       if not return None
 # print dictionary (d)
 #  * etgar: use for loop on d.items()
