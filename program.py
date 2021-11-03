@@ -47,5 +47,13 @@ print(thisdict)
 #   d dictionary k key
 #   if key exist in dict delete it and return it
 #       if not return None
+# create a dictionary of cities in the world and their population:
+#   Tel-aviv, london, paris, tokyo
+#    { tel-Aviv: 451,520 ,  ... }
+#   input a city name from user
+#     print the city number of citizens
+#     if city does not exist print 'city does not exist in the dict'
+#   input a number from the user
+#     if there is acity with number of citizens in the dict print the city name
 # print dictionary (d)
 #  * etgar: use for loop on d.items()
