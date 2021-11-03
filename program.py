@@ -56,5 +56,10 @@ print(thisdict)
 #     if there is acity with number of citizens in the dict print the city name
 # def getSize(d)
 #     return the size of the dictionary (number of items)
+# def isDictKeysAlpha(d)
+#     returns true if all the keys are alpha (hint: use isaplhpa)
+# def popByValue(d, v)
+#     pop all items with the v specific value
+#     return a list of all of the removed items
 # def printDictionary (d)
 #  * etgar: use for loop on d.items()
