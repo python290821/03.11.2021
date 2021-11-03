@@ -40,9 +40,8 @@ print(thisdict)
 #   d dictionary k key
 #   if key exist in dict return True else False
 # def tryAdd(d, k, v)
-#   if key exist in dict return True else False
-#   if key exists return False
-#     else add to dictionary (k,) and return True
+#   if key exist in dict return False
+#   elif key does NOT exists return true and add to dictionary (k:v)
 # def tryDelete(d, k)
 #   d dictionary k key
 #   if key exist in dict delete it and return it
@@ -55,5 +54,7 @@ print(thisdict)
 #     if city does not exist print 'city does not exist in the dict'
 #   input a number from the user
 #     if there is acity with number of citizens in the dict print the city name
-# print dictionary (d)
+# def getSize(d)
+#     return the size of the dictionary (number of items)
+# def printDictionary (d)
 #  * etgar: use for loop on d.items()
